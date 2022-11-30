@@ -23,3 +23,17 @@ p {
   width: 23%;
   margin-top: -90px;
 }
+
+.nav-link {
+  margin: 4px;
+  border: 2px solid #2484bf;
+  padding: 5px;
+  background-color: #2484bf;
+  color: #f5f5ff;
+}
+
+nav ul li {
+  margin: 10px;
+  font-size: 20px;
+  display: inline-block;
+}

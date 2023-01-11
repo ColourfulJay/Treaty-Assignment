@@ -1,8 +1,50 @@
-.center {
+* {
+  line-height: 140%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+
+  background-color: #2f5373;
+  color: #ededed;
+
+  font-size: 2.4rem;
+
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+section div {
+  float: right;
+  width: 70%;
+
+  margin-bottom: 50px;
+}
+
+#text-on-left {
+  width: 50%;
+}
+
+#center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 35%;
+  width: 60%;
 }
 
 p {
@@ -10,14 +52,22 @@ p {
   margin-left: 20px;
 }
 
-.left {
+/* .left {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 40px;
   width: auto;
-  margin-bottom: 10px;
-}
+  top: 30px;
+} */
 
 .richard {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 600px;
   width: 23%;
@@ -34,12 +84,8 @@ p {
 */
 nav ul li {
   margin: 10px;
-  font-size: 20px;
+  font-size: 2rem;
   display: inline-block;
-}
-
-h3 {
-  font-weight: lighter;
 }
 
 nav {
@@ -77,4 +123,14 @@ nav a:focus {
 
 nav a:active {
   font-weight: bolder;
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+
+  background-color: #2f5373;
+  color: #ededed;
+
+  clear: both;
 }

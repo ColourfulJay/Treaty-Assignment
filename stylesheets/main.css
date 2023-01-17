@@ -136,3 +136,59 @@ footer {
 
   clear: both;
 }
+
+#page3image {
+  width: 38%;
+  float: right;
+  position: relative;
+  right: 50px;
+  bottom: 165px;
+  -webkit-animation-name: treaty2;
+  -moz-animation-name: treaty2;
+  -o-animation-name: treaty2;
+  animation-name: treaty2;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: fowards;
+  -moz-animation-fill-mode: fowards;
+  -o-animation-fill-mode: fowards;
+  animation-fill-mode: fowards;
+}
+
+@-webkit-keyframes treaty2 {
+  from {
+    left: 233px;
+  }
+  to {
+    left: 103px;
+  }
+}
+
+@-moz-keyframes treaty2 {
+  from {
+    left: 233px;
+  }
+  to {
+    left: 103px;
+  }
+}
+
+@-o-keyframes treaty2 {
+  from {
+    left: 233px;
+  }
+  to {
+    left: 103px;
+  }
+}
+
+@keyframes treaty2 {
+  from {
+    left: 233px;
+  }
+  to {
+    left: 103px;
+  }
+}

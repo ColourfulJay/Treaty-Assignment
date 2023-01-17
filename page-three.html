@@ -6,16 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/main.css" />
     <title>Treaty 2</title>
-    <style></style>
+    <style>
+      body {
+        opacity: 0;
+        transform: translateY(-100px);
+
+        /* Part 1 */
+
+        transform: translateY(-100px);
+        /*
+            This defines our animation.
+
+            We define the animation-name as Fade-in.
+
+            We define the animation-duration (how long the animation lasts) as 1 second.
+
+            We define the animation-timing-function (how the styling changes as it moves through the
+            animation) as ease-in which means it will slowly start the animation and speed up to the end.
+            We define the animation-delay as 2 seconds.
+
+            We define the animation-fill-mode (whether the styling is kept at the end of the animation
+            for not) to forwards, which means to keep the styling that is at the end of the animation.
+
+            Other animation properties that we do not define are:
+            animation-iteration-count - how many times you want your animation to run.
+
+            animation-direction - do you want your animation to go forward(nortmal)? Backward(reverse)?
+            Forward and then backward (alternate)? Backward then forward (alternate-reverse). -Mr Hardman
+        */
+        -o-animation: fade-in 1s ease-in 2s forwards;
+        -moz-animation: fade-in 1s ease-in 2s forwards;
+        -webkit-animation: fade-in 1s ease-in 2s forwards;
+        animation: fade-in 1s ease-in 2s forwards;
+      }
+      /*
+        This defines the aniaion itself. We use #keyframes to show that we are creating an
+        animation and then we use the same tname that we defined in the animation property *i,e,m fade-in).
+
+        Then, we define the startung point of the animation (from) and the styling at the start point.
+
+        finally, we define the ending point of the animation (to) and the styling at the end ending point.
+
+        NOTE: You can also define %s of where different styling occurs (i.e., 0%, 33%, 66%, 100%). -Mr Hardman
+      */
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- 
     Name: lily
-    
     Course: Web-Dev
     Teacher: Mr. Hardman
     School: PTEC
-    Date Late Modified: 01/10/23
+    Date Late Modified: 01/17/23
   -->
     <nav>
       <ul style="text-align: center; padding: 5px">
@@ -24,19 +76,46 @@
         <li><a href="page-three.html " class="nav-link"> Page 3</a></li>
       </ul>
     </nav>
-    <header>
+    <header style="margin-bottom: 5rem">
       <h1 style="text-align: center">Treaty 2</h1>
       <img
         src="images/treaty2-map.jpg"
         id="center"
-        alt='at the top is a blue strip with "anishinaabe" inside. at the bottom
-          is a green strip with "agowidiiwinan" inside. in the center is a image of the shape of where treaty 2 is, inside is two men
-          shaking hands on a sunset. On the left of the image of treaty 2 is 18 then on the right is 71' />
+        alt="a map of treaty 2 area with names and locations of nations on it" />
     </header>
-    <br />
-    <br />
-    <br />
-    <main></main>
+
+    <main>
+      <h2>How is this treaty different from others</h2>
+      <p>
+        Treaty 2 is one of the few numbered treaties to have its treaty
+        community have a self Government
+      </p>
+
+      <p>
+        One of the few numbered treaties in Manitoba to pay each Indigenous
+        person 15 dollars
+      </p>
+
+      <p>
+        "The treaty aimed for the british to expand towards the west without
+        create
+        <br />
+        violence between the british settlers and the First Nations" -<a
+          href="https://canadianhistoryworkshop.wordpress.com/treaties/treaty-two/"
+          target="_blank"
+          >Canadian History Workshop
+        </a>
+      </p>
+      <img
+        src="images/image with treaty 2 in it aswell as treaty 1.jpg"
+        style="
+          width: 38%;
+          float: right;
+          position: relative;
+          right: 50px;
+          bottom: 165px;
+        " />
+    </main>
 
     <footer>
       <p style="text-align: center">&#169; Lily Telfer</p>

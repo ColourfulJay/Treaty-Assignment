@@ -10,6 +10,7 @@ body {
   width: 90%;
   margin: 0 auto;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -143,52 +144,58 @@ footer {
   position: relative;
   right: 50px;
   bottom: 165px;
+
   -webkit-animation-name: treaty2;
   -moz-animation-name: treaty2;
   -o-animation-name: treaty2;
   animation-name: treaty2;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -o-animation-duration: 3s;
   animation-duration: 3s;
-  -webkit-animation-fill-mode: fowards;
-  -moz-animation-fill-mode: fowards;
-  -o-animation-fill-mode: fowards;
-  animation-fill-mode: fowards;
+
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes treaty2 {
   from {
-    left: 233px;
+    left: 700px;
   }
   to {
-    left: 103px;
+    left: -50px;
   }
 }
 
 @-moz-keyframes treaty2 {
   from {
-    left: 233px;
+    left: 700px;
   }
   to {
-    left: 103px;
+    left: -50px;
   }
 }
 
 @-o-keyframes treaty2 {
   from {
-    left: 233px;
+    left: 700px;
   }
   to {
-    left: 103px;
+    left: -50px;
   }
 }
 
 @keyframes treaty2 {
   from {
-    left: 233px;
+    left: 700px;
   }
   to {
-    left: 103px;
+    left: -50px;
   }
 }
